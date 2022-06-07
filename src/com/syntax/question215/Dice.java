@@ -1,4 +1,4 @@
-package com.syntax.dicequestion;
+package com.syntax.question215;
 
 
 public class Dice {

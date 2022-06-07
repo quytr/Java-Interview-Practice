@@ -14,26 +14,26 @@ public class NonRepeatedCharacter {
 
     public static void main(String[] args) {
         String str = "The weather today is beautiful";
-        String str2 = str.toLowerCase().replace(" ","");
+        String str2 = str.toLowerCase().replace(" ", "");
         System.out.println(str2);
 
         LinkedHashMap<Character, Integer> counts = new LinkedHashMap<>();
 
         for (int i = 0; i < str2.length(); i++) {
             char c = str2.charAt(i);
-            if(counts.containsKey(c)){
+            if (counts.containsKey(c)) {
                 //counts.get(c) to get the value
-                counts.put(c, counts.get(c)+ 1);
-            }else{
-                counts.put(c,1);
+                counts.put(c, counts.get(c) + 1);
+            } else {
+                counts.put(c, 1);
             }
         }
         System.out.println(counts);
 
         ArrayList<Character> arrayList = new ArrayList<>();
         // to get the key and value of the map
-        for(Map.Entry<Character,Integer> entry: counts.entrySet()){
-            if(entry.getValue()==1){
+        for (Map.Entry<Character, Integer> entry : counts.entrySet()) {
+            if (entry.getValue() == 1) {
                 arrayList.add(entry.getKey());
             }
         }

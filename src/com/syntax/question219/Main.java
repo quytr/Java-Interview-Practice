@@ -1,5 +1,9 @@
 package com.syntax.question219;
 
+import javax.management.Query;
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main {
     /*
     Count how many times a given word from a list is present as prefix in another list both lists will be given as input to the function
@@ -20,4 +24,49 @@ word alex is prefix in alexander so we get 1
 
 word joe is not present as prefix so we get 0
      */
+
+    public static List<Integer> countOnlyPrefixes(List<String> names, List<String> query){
+
+        List<Integer> countPrefixes = new ArrayList<>();
+
+        for (int i = 0; i < query.size(); i++) {
+            int counts =0;
+            for (int j = 0; j < names.size(); j++) {
+                if(names.get(j).startsWith(query.get(i)) && !names.get(j).equals(query.get(i))){
+                    counts++;
+                }
+            }
+            countPrefixes.add(i,counts);
+        }
+
+
+        return countPrefixes;
+
+    }
+
+    public static void main(String[] args) {
+        List<String> names= new ArrayList<>();
+        names.add("steve");
+        names.add("stevens");
+        names.add("danny");
+        names.add("steves");
+        names.add("dan");
+        names.add("john");
+        names.add("johny");
+        names.add("joe");
+        names.add("alex");
+        names.add("alexander");
+
+//        System.out.println(names);
+
+        List<String> query = new ArrayList<>();
+        query.add("steve");
+        query.add("alex");
+        query.add("joe");
+        query.add("john");
+        query.add("dan");
+
+//        System.out.println(query);
+        System.out.println(countOnlyPrefixes(names,query));
+    }
 }

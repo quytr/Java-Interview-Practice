@@ -27,19 +27,20 @@ word joe is not present as prefix so we get 0
 
     public static List<Integer> countOnlyPrefixes(List<String> names, List<String> query){
 
+        // create a new list to have the counts
         List<Integer> countPrefixes = new ArrayList<>();
-
+        // use for loop to go through query list
         for (int i = 0; i < query.size(); i++) {
-            int counts =0;
+            int counts =0;  //set counts as 0
+            // use another for loop to check if name list contains query, and not include the word itself
             for (int j = 0; j < names.size(); j++) {
                 if(names.get(j).startsWith(query.get(i)) && !names.get(j).equals(query.get(i))){
                     counts++;
                 }
             }
+            // add the counts at position i (query index)
             countPrefixes.add(i,counts);
         }
-
-
         return countPrefixes;
 
     }

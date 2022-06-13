@@ -23,7 +23,7 @@ input ["aabbccaddda"]-> output["abcada"]
         // if index 0 and index 1 are not the same, the return index 0 itself, then continue checking the String at index 1 by calling the method again with starting point at index 1
         // if will repeat until it goes through the whole string
         return input.charAt(0) == input.charAt(1) ? removeConsecutiveDuplicates(input.substring(1)) : input.charAt(0) + removeConsecutiveDuplicates(input.substring(1));
-        
+
         /*
         //Full version:
         if(input.charAt(0)==input.charAt(1)){

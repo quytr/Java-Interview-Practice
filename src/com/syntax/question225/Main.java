@@ -31,6 +31,18 @@ Input[789] ->output [987]
 
         return  reverse;
 
+        /*
+        // Using StringBuilder to reverse:
+
+        String n = String.valueOf(N);
+
+        StringBuilder stringBuilder = new StringBuilder(n);
+        stringBuilder = stringBuilder.reverse();
+
+        return Integer.parseInt(stringBuilder.toString());
+
+         */
+
     }
 
     public static void main(String[] args) {

@@ -1,6 +1,6 @@
 package com.syntax.question225;
 
-public class Main {
+public class MANDATORY {
     /*
 Reverse the number
 

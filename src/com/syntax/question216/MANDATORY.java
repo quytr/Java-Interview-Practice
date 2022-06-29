@@ -3,7 +3,7 @@ package com.syntax.question216;
 
 import java.util.Arrays;
 
-public class ArraySumToZero {
+public class MANDATORY {
     /*
     Create an Array of size N whose elements sum to zero
 

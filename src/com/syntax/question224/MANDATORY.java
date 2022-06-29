@@ -1,6 +1,6 @@
 package com.syntax.question224;
 
-public class Main {
+public class MANDATORY {
     /*
     Remove Consecutive duplicates Write the logic to remove only consecutive duplicates
 

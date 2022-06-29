@@ -3,7 +3,7 @@ package com.syntax.question222;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Main {
+public class MANDATORY {
     /*
     Write the logic that picks largest and second largest numbers from a list add them and return the results.
     input to method is a list that contains the numbers

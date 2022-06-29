@@ -1,6 +1,6 @@
 package com.syntax.question226;
 
-public class Main {
+public class MANDATORY {
     /*
     Reverse the String without using the Reverse method from the BtringBuilder Class
 

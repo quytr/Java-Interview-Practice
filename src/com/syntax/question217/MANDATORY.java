@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class CountDuplicateNumbers {
+public class MANDATORY {
     /*
     Complete countDuplicates method This method should count how many numbers are appearing more than once and should return the count.
 
@@ -86,23 +86,7 @@ Input [12,12,13,45,78,67,87] output 1
         System.out.println(countDuplicates(d));
 
 
-
-
     }
 
-    public static class ReverseArray {
-        /*
-        For a given array of size N, write a code to print the reverse of the array
-        https://www.interviewkickstart.com/interview-questions/java-interview-questions-testers
-         */
 
-        public static void main(String[] args) {
-            int[] nums = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
-
-            for (int i = (nums.length - 1); i >= 0; i--) {
-                System.out.println(nums[i]);
-            }
-
-        }
-    }
 }

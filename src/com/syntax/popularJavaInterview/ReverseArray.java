@@ -1,4 +1,4 @@
-package com.syntax.batch11;
+package com.syntax.popularJavaInterview;
 
 public class ReverseArray {
 

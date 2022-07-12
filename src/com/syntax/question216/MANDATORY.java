@@ -66,9 +66,7 @@ N will be given as input to the function and fucntion will return an array whose
         System.out.println(Arrays.toString(arraySumToZero(6)));
         System.out.println(Arrays.toString(arraySumToZero(7)));
 
-        int[] a = new int[]{1,2,3};
 
-        System.out.println(Arrays.toString(a));
 
 
     }
